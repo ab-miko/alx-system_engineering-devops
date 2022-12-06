@@ -1,2 +1,2 @@
 #!/bin/bash
-echo $(printf $PATH |  tr -cd : | wc -c) + 1 |bc
+echo $(($(printf $PATH |  tr -cd : | wc -c) + 1))
